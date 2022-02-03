@@ -13,7 +13,6 @@ function handleSubmit(event) {
     [elements[1].name]: elements[1].value,
   };
 
-  console.log(event.currentTarget.elements);
   console.log(loginObj);
   event.currentTarget.reset();
 }
