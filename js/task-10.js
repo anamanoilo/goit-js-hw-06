@@ -15,10 +15,9 @@ function createBoxes(amount) {
   amount = refs.input.value;
   const arrayOfDivStrings = [];
 
-  let heigth = 20;
-  let width = 20;
+  let counter = 20;
   for (let i = 0; i < amount; i += 1) {
-    let div = `<div style='background-color: ${getRandomHexColor()}; width: ${(width += 10)}px; height: ${(heigth += 10)}px;'></div>`;
+    let div = `<div style='background-color: ${getRandomHexColor()}; width: ${(counter += 10)}px; height: ${(counter += 10)}px;'></div>`;
     arrayOfDivStrings.push(div);
   }
   refs.box.insertAdjacentHTML("afterbegin", arrayOfDivStrings.join(""));
