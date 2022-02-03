@@ -15,7 +15,6 @@ function createBoxes(amount) {
   amount = refs.input.value;
   const arrayOfDivStrings = [];
 
-  console.log("~ refs.box", refs.box);
   let heigth = 20;
   let width = 20;
   for (let i = 0; i < amount; i += 1) {
