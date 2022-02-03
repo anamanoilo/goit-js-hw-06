@@ -33,16 +33,14 @@ function destroyBoxes() {
 //   amount = refs.input.value;
 //   const arrayOfDivRefs = [];
 
-//   let width = 30;
-//   let heigth = 30;
+//   let counter = 30;
 //   for (let i = 0; i < amount; i += 1) {
 //     let div = document.createElement("div");
 //     div.style.backgroundColor = getRandomHexColor();
-//     div.style.width = `${width}px`;
-//     div.style.heigth = `${heigth}px`;
+//     div.style.width = `${counter}px`;
+//     div.style.heigth = `${counter}px`;
 //     arrayOfDivRefs.push(div);
-//     width += 1;
-//     heigth += 1;
+//     counter += 1;
 
 //   }
 
