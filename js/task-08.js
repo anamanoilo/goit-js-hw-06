@@ -3,17 +3,17 @@ formRef.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
-  const {
-    elements: { email, password },
-  } = event.currentTarget;
-  if (!email.value || !password.value) {
+  const elements = event.currentTarget.elements;
+  if (!elements.email.value || !elements.password.value) {
     alert("All the fields must be filled");
     return;
   }
   const loginObj = {
-    email: email.value,
-    password: password.value,
+    [elements[0].name]: elements[0].value,
+    [elements[1].name]: elements[1].value,
   };
+
+  console.log(event.currentTarget.elements);
   console.log(loginObj);
   event.currentTarget.reset();
 }
